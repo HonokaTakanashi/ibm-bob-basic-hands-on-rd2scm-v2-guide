@@ -1,0 +1,238 @@
+# LAB3 - セキュリティ強化
+
+安全なサイト運用のために、生成されたコードにセキュリティ上の問題がないか確認します。
+
+---
+
+## 1. Review コマンドの実行
+
+### 1-1. レビューの実行
+
+チャット画面に `/review` と入力します。
+
+**手順:**
+
+1. チャット画面に `/review` と入力
+2. 入力途中で候補が出てくるので、候補をクリック
+3. 「実行」をクリック
+
+<img src="../Image/code-review-lab/image-1.png" width="400" style="border: 1px solid black;">
+
+<img src="../Image/code-review-lab/image-2.png" width="400" style="border: 1px solid black;">
+
+<img src="../Image/code-review-lab/image-3.png" width="400" style="border: 1px solid black;">
+
+サイドバーに **REVIEW パネル**が開きます。
+
+
+
+
+### 1-2. レビュー設定
+
+REVIEW パネルで以下を順に設定します。
+
+#### 1-2-1. リポジトリーの選択
+
+「リポジトリーを選択」のドロップダウンから、レビュー対象のリポジトリを選択します。
+
+#### 1-2-2. レビュー対象ブランチの指定
+
+「レビュー対象」のドロップダウンから、比較するブランチを選択します（例: `origin/dev`）。
+
+<img src="../Image/code-review-lab/image-4.png" width="800" style="border: 1px solid black;">
+
+### 1-3. レビューの開始
+
+「**レビューを開始**」をクリックします。
+
+レビュー対象ファイルが一覧表示され、Bob がレビューを実行します。
+
+<img src="../Image/code-review-lab/image-5.png" width="600" style="border: 1px solid black;">
+
+
+
+
+
+
+### 1-4. レビューの完了
+
+レビューが完了すると、Bob がレビュー結果のサマリーを報告します。
+
+
+**サマリーの内容:**
+
+- 検出された問題の総数
+- 優先度別の分類
+- 重要な問題のハイライト
+- 改善すべきポイントを優先度別にレポート
+
+<img src="../Image/code-review-lab/image-6.png" width="400" style="border: 1px solid black;">
+
+---
+
+## 2. BOB FINDINGS の確認
+
+### 2-1. BOB FINDINGS の表示
+
+
+レビューが完了すると、画面下に BOB FINDINGS が表示されます。
+
+<img src="../Image/code-review-lab/image-7.png" width="800" style="border: 1px solid black;">
+
+
+> 注意: 表示されない場合は、画面下部のボタンをクリックしてください。
+
+### 2-2. BOB FINDINGSの見方
+
+ファイルを指定して展開すると、レビュー項目の一覧が表示されます。
+
+表示形式：
+
+<img src="../Image/code-review-lab/image-8.png" width="600" style="border: 1px solid black;">
+
+
+
+**手順:**
+
+1. BOB FINDINGS でファイルを指定
+
+<img src="../Image/code-review-lab/image-9.png" width="600" style="border: 1px solid black;">
+
+<img src="../Image/code-review-lab/image-10.png" width="600" style="border: 1px solid black;">
+
+<img src="../Image/code-review-lab/image-11.png" width="600" style="border: 1px solid black;">
+
+### 2-3. レビュー箇所の詳細確認
+
+レビュー箇所をクリックすると、詳細結果が展開されます。
+
+<img src="../Image/code-review-lab/image-12.png" width="600" style="border: 1px solid black;">
+
+
+
+**詳細情報:**
+
+- 問題の具体的な説明
+- なぜ問題なのか
+- 推奨される修正方法
+
+<img src="../Image/code-review-lab/image-13.png" width="600" style="border: 1px solid black;">
+
+### 2-4. 並び替え方法の選択
+
+ファイル別の表示だけでなく、カテゴリーや優先度順に並び替えることも可能です。
+
+**並び替えオプション:**
+
+- ファイル別
+- カテゴリー別（セキュリティ、パフォーマンス、保守性）
+- 優先度別（高、中、低）
+
+**手順:**
+
+1. 並び替えボタンをクリック
+2. 並び替え方法を選択
+3. 並び替え結果を確認
+
+<img src="../Image/code-review-lab/image-14.png" width="600" style="border: 1px solid black;">
+
+<img src="../Image/code-review-lab/image-15.png" width="600" style="border: 1px solid black;">
+
+### 2-5. レビュー内容の確認
+
+説明欄には、レビュー箇所の概要・推奨修正案が記載されています。
+
+<img src="../Image/code-review-lab/image-16.png" width="600" style="border: 1px solid black;">
+
+---
+
+## 3. エラー箇所の修正
+
+### 3-1. 修正作業の開始
+
+修正したい箇所を一つ選び、「Bobで修正」ボタンをクリックして修正を開始します。
+
+**手順:**
+
+1. BOB FINDINGS から修正したい項目を選択する
+2. 「Bobで修正」ボタンをクリックする
+
+<img src="../Image/code-review-lab/image-17.png" width="600" style="border: 1px solid black;">
+
+### 3-2. Bob による自動修正
+
+「Bobで修正」をクリックすると、BOB FINDINGS 内のレビュー内容が Bob に連携され、Bob が自動的にコードを修正します。
+
+<img src="../Image/code-review-lab/image-18.png" width="800" style="border: 1px solid black;">
+
+### 3-3. 修正完了の確認
+
+修正が完了するとサマリーが表示されます。
+
+**サマリーの内容:**
+
+- 修正された問題
+- 変更されたファイル
+- 変更内容の概要
+
+<img src="../Image/code-review-lab/image-19.png" width="600" style="border: 1px solid black;">
+
+
+---
+
+
+## 4. 修正後のテスト実行
+
+### 4-1. テストの実行
+
+修正完了後に Bob はテストの実行を提案してくれるため、「テストの実行」をクリックします。
+
+**テストの目的:**
+- 修正が正しく適用されたか確認
+- 既存機能が壊れていないか確認
+- 新たな問題が発生していないか確認
+
+### 4-2. テストの実行プロセス
+
+テストでは、Bob がブラウザ操作を行い、修正したコードが正しく動作しているかをチェックします。
+
+<img src="../Image/code-review-lab/image-20.png" width="600" style="border: 1px solid black;">
+
+
+**テスト項目:**
+
+- ページの読み込み
+- 各機能の動作確認
+- エラーの有無
+- パフォーマンスの確認
+
+**ユーザーのアクション:**
+
+1. テスト結果を確認
+2. 問題があれば追加の修正を依頼
+
+<img src="../Image/code-review-lab/image-21.png" width="800" style="border: 1px solid black;">
+
+
+> **注意：テストが実行されない場合の対応について**
+>
+> テストファイルやテスト設定(package.json など)が存在しない場合、Bob は自動テストを実行できないと判断することがあります。その場合は「テストを実行できない」と報告したり、コードレビューやブラウザ・手動での動作確認を案内します。
+>
+> その場合は、以下のいずれかの方法で対応してください。
+>
+> 1. **手動で確認する**: Bob の案内に従い、ブラウザや手動での動作確認を実施します。
+> 2. **テストコードを作成する**: Bob に「〇〇機能のユニットテストを作成して実行してください」などと指示します。Bob がテストコードを作成してから実行します。
+
+---
+
+## LAB3 の完了
+
+**完了条件:**
+
+- `/review` コマンドでコードレビューを実行
+- レビュー設定（リポジトリー・対象ブランチ・オプション）を指定
+- BOB FINDINGS を確認
+- 1つ以上の問題を修正
+- テストを実行
+
+お疲れ様でした！
