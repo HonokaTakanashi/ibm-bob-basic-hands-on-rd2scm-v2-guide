@@ -14,4 +14,4 @@ Lab 3・4 を実施するかどうかによって、手順が異なります。�
 - [Lab 3・4 を実施する場合](preparation-and-setup-with-lab3-4.md)
 - [Lab 3・4 を実施しない場合](preparation-and-setup-without-lab3-4.md)
 
-前へ: [はじめに](README.md)
+前へ: [はじめに](../README.md)
