@@ -74,6 +74,7 @@ IBM Bobを使って、実用的なFAQサイト作成をユースケースとし�
 IBM Bobの基礎を学び、開発環境を整えます。
 
 - [準備と設定](/Docs/preparation-and-setup.md)
+- [Bob IDE 内でガイドを表示する手順](/Docs/show-guide-in-bob-ide.md)
 - [Bobのインターフェース](https://r-nakayamasan.github.io/bob-workshop-draft/02_bob_interface_v2/)
 
 ### 2️⃣ ハンズオン
