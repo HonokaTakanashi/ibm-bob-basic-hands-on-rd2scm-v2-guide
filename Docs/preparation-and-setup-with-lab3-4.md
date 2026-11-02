@@ -15,7 +15,7 @@
 **手順:**
 
 1. Webブラウザで既存のリポジトリにアクセスする
-   - URL: https://github.com/YutaNonaka/ibm-bob-basic-hands-on-rd2scm-v2
+   - URL: https://github.com/HonokaTakanashi/ibm-bob-basic-hands-on-rd2scm-v2
 2. GitHub画面右上の「Fork」ボタンをクリック
 3. Fork先のアカウントを選択（通常は自分のアカウント）
 4. 「Create fork」をクリック
