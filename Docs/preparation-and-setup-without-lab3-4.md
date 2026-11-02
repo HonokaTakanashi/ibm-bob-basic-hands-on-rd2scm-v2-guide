@@ -12,7 +12,7 @@
 #### 1-1. GitHubリポジトリへアクセス
 
 Webブラウザを開き、リポジトリにアクセスします
-- URL: https://github.com/YutaNonaka/ibm-bob-basic-hands-on-rd2scm-v2
+- URL: https://github.com/HonokaTakanashi/ibm-bob-basic-hands-on-rd2scm-v2
 
 #### 1-2. データのダウンロード
 
